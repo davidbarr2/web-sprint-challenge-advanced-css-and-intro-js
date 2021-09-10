@@ -245,13 +245,19 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
 function get20s(artists) {
+  let twentieth = []
+  // console.log('reached')
   // for(let i=0; i < artists.length; i++){
-
-  //   // split by () and ;
-  //   //if()
+  //   let dates=artists[i].years
+    //let dateArray=dates.split(" ")
+    //console.log(dateArray)
+  //   if(dateArray[0]>=1900 && dateArray[1]<2000){
+  //     twentieth.push(artists[i].name)
   // }
+  return twentieth
 }
 
+console.log(get20s(artists))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -264,7 +270,8 @@ Use removeArtist to do the following:
 For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
 function removeArtist(artists,index) {
-  /*Your Code Here*/
+  artists.splice(index,1)
+  return artists.length
 }
 
 
